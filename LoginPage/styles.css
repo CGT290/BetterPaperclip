@@ -1,76 +1,17 @@
-.navbar-brand {
-    width: 33.333%;
+body {
+    background-image:url(../images/login_background_image.webp);
   }
-  .profile-icon,
-  .settings-icon {
-    width: 16.666%;
-    text-align: center;
+  .login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
-  .custom-navbar {
-    background-color: #85C790;
+  .form-group {
+    margin-bottom: 20px;
   }
-                          /*header*/
-header{
-background-color: #5CA167;
-justify-content: space-between;
-padding:10px;
-}
-.pageTitle{
-cursor:pointer;
-float:left;
-width:260px;
-
-}
-header h1{
-font-size:23px;
-margin-left:30px;
-margin-right:5px;
-width:170px;
-}
-.BalanceBar{
-float:right;
-}
-
-
-
-                          /*buttons*/
-.headerButton{
-float:right
-width:35px;
-height:35px;
-border:3px solid #000;
-border-radius:20px;
-text-align:center;
-top:5px;
-cursor:pointer;
-}
-.headerButton div{
-margin:6px;
-font-size:20px;
-}
-.settingsButton{
-width:35px;
-height:35px;
-border:3px solid #000;
-border-radius:20px;
-text-align:center;
-top:5px;
-cursor:pointer;
-}
-
-
-body{
-margin:0;
-}
-#drop-area {
-float:right;
-width: 300px;
-height: 200px;
-border: 2px dashed #ccc;
-text-align: center;
-padding: 20px;
-}
-
-#file-list {
-margin-top: 20px;
-}
+  .btn-login {
+    width: 100%;
+  }
