@@ -1,5 +1,9 @@
 body {
     background-image:url(../images/login_background_image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
   .login-container {
     max-width: 400px;
