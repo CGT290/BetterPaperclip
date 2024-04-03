@@ -57,7 +57,9 @@ text-align:center;
 top:5px;
 cursor:pointer;
 }
-
+.titleCard:hover{
+cursor:pointer;
+}
 
 body{
 margin:0;
