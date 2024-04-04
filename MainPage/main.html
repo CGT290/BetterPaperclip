@@ -10,38 +10,41 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-    <div class="container">
-        <div class="d-flex titleCard dropdown" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            <!-- Image -->
-            <img src="../images/leafIcon.png" alt="Title Icon" width="40px">
-            <!-- Title text -->
-            <span class="navbar-brand mb-0 h1">Better PaperCut</span>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="../UploadPage/main.html">Upload page</a></li>
-                <li><a class="dropdown-item" href="../FinancialPage/main.html">Financials page</a></li>
-            </ul>
-
-        </div>
-
-        <div class="balanceBar mr-10">
-            <p>Balance: $XX.XX</p>
-        </div>
-        <div class="headerButton profile dropdown" id="dropdownProfileButton" data-bs-toggle="dropdown" aria-expanded="false">
-            <div class="fa-solid fa-user"></div>
-            <ul class="dropdown-menu" aria-labelledby="dropdownProfileButton">
-                <li><a class="dropdown-item" href="../LoginPage/main.html">Change user</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container">
+            <div class="d-flex titleCard dropdown">
+                <!-- Image -->
+                <img src="../images/leafIcon.png" alt="Title Icon" width="40px">
+                <!-- Title text -->
+                <span class="navbar-brand mb-0 h1" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Better PaperCut</span>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="../UploadPage/main.html">Upload page</a></li>
+                    <li><a class="dropdown-item" href="../FinancialPage/main.html">Financials page</a></li>
                 </ul>
+            </div>
+    
+            <div class="balanceBar mr-10">
+                <p>Balance: $XX.XX</p>
+            </div>
+            <div class="headerButton profile dropdown">
+                <div id="dropdownProfileButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownProfileButton">
+                    <li><a class="dropdown-item" href="../LoginPage/main.html">Change user</a></li>
+                </ul>
+            </div>
+            <div class="headerButton settings dropdown">
+                <div id="dropdownSettingsButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownSettingsButton">
+                    <li><a class="dropdown-item" href="../LoginPage/main.html">Log out</a></li>
+                    <li><a class="dropdown-item" href="http://webprint.brooklyn.cuny.edu/">PaperClip original page</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="headerButton settings dropdown" id="dropdownSettingsButton" data-bs-toggle="dropdown" aria-expanded="false">
-            <div class="fa-solid fa-gear"></div>
-            <ul class="dropdown-menu" aria-labelledby="dropdownSettingsButton">
-                <li><a class="dropdown-item" href="../LoginPage/main.html">Log out</a></li>
-                <li><a class="dropdown-item" href="http://webprint.brooklyn.cuny.edu/">PaperClip original page</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 <div class="container">
     <div class="row">
         <div class="col-lg-6 mb-5" style="height: 300px; text-align:center;">
