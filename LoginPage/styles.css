@@ -4,6 +4,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    filter: contrast(110%);
   }
   .login-container {
     max-width: 400px;
@@ -19,3 +20,8 @@ body {
   .btn-login {
     width: 100%;
   }
+
+ #userNameErrors,#passwordErrors{
+  text-align: center;
+  color: red;
+ }
