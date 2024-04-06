@@ -17,12 +17,14 @@
       <div class="form-group">
         <label for="username">Card Number/ID</label>
         <input type="text" class="form-control" id="username" placeholder="Enter your card number/Id">
+        <small id = "userNameErrors"></small>
       </div>
       <div class="form-group">
         <label for="password">Password</label>
         <input type="password" class="form-control" id="password" placeholder="Enter your password">
+        <small id = "passwordErrors"></small>
       </div>
-      <a href="../MainPage/main.html" class="btn btn-primary btn-login" >Login</a>
+      <a href="../MainPage/main.html" class="btn btn-primary btn-login" id ="LoginButton">Login</a>
     </form>
   </div>
 </div>
@@ -31,6 +33,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src = "Login.js"></script>
 
 </body>
 </html>
