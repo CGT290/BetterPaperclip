@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
             userNameError.textContent = '';
             passwordError.textContent = '';
 
-            const notEmpty = true;
+            let notEmpty = true;
 
             if(userName.value.trim() === ''){
                 a.preventDefault();
