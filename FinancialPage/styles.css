@@ -62,14 +62,6 @@ cursor:pointer;
 body{
 margin:0;
 }
-#drop-area {
-float:right;
-width: 300px;
-height: 200px;
-border: 2px dashed #ccc;
-text-align: center;
-padding: 20px;
-}
 
 table {
   width: 100%;
