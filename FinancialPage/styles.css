@@ -96,3 +96,6 @@ th {
 #FundingInfo{
   display:none;
 }
+.dropdown-menu{
+  width:30px;
+}
