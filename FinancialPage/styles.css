@@ -27,8 +27,9 @@ margin-left:30px;
 margin-right:5px;
 width:170px;
 }
-.BalanceBar{
+.balanceBar{
 float:right;
+margin-left: 350px;
 }
 
 
@@ -90,4 +91,8 @@ th {
 }
 .new-payment button{
   background-color:#5CA167;
+}
+
+#FundingInfo{
+  display:none;
 }
