@@ -82,7 +82,7 @@ margin:0;
 }
 #drop-area {
 float:right;
-width: 300px;
+width: 257px;
 height: 200px;
 border: 2px dashed #ccc;
 text-align: center;
@@ -97,3 +97,4 @@ margin-top: 20px;
   margin: 0; /* Reset margin for h3 and h5 */
   padding: 0; /* Reset padding for h3 and h5 */
 }
+
