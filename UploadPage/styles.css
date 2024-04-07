@@ -95,14 +95,13 @@ margin-top: 20px;
 
 .custom-page{
   display:none;
+  color:grey;
+  width:150;
 }
 .cust-display{
   display:block;
 }
-input{
-  color:grey;
-  width:150;
-}
+  
 .upload-button{
   width:150px; 
   background-color:#5CA167;
