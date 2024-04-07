@@ -10,6 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
         <div class="container">
             <div class="d-flex titleCard dropdown">
@@ -51,28 +52,34 @@
         </div>
     </nav>
 
+    
     <div class="container mt-3">
         <div class="row">
+            <!--main preview container-->
             <div class="col-sm-12 col-md-6 order-md-2">
-                <div class="bg-primary" style="height: 600px;">
+                <div class="main-container" style="height: 600px;">
                     <div id="drop-area">
                         <p>Drag and drop files here</p>
                         <div id="file-list"></div>
                     </div>
                 </div>
             </div>
+
+            <!--queue preview-->
             <div class="col-sm-6 col-md-3 order-md-1">
-                <div class="bg-secondary" style="height: 600px;">
+                <div class="side-containder" style="height: 600px;">
                     Second Div Content
                 </div>
             </div>
+
+            <!--print options container-->
             <div class="col-sm-6 col-md-3 order-md-3">
-                <div class="row bg-secondary justify-content-center" style="height: 600px;">
+                <div class="row bg-secondary side-containder justify-content-center" style="height: 600px;">
                     <h3>Print Settings</h3>
     
                     <div class="dropdown" style="margin: 0 auto;">
                         <h5>Color option</h5>
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
+                        <button class="btn buttons dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
                             Black & white
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
@@ -82,7 +89,7 @@
                     </div>
                     <div class="dropdown" style="margin: 0 auto;">
                         <h5>Pages</h5>
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
+                        <button class="btn buttons dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
                             All
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -96,7 +103,7 @@
                     </div>
                     <div class="dropdown" style="margin: 0 auto;">
                         <h5>Copies</h5>
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
+                        <button class="btn buttons dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
                             1
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
@@ -113,7 +120,7 @@
     
                     <div class="dropdown" style="margin: 0 auto;">
                         <h5>Orientation</h5>
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
+                        <button class="btn buttons dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
                             Portrait
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -121,7 +128,7 @@
                             <li><a class="dropdown-item" href="#" onclick="updateButtonText('Landscape',this)">Landscape</a></li>
                         </ul>
                     </div>
-                    <button type="button" class="upload-button">Upload</button>
+                    <button class="btn upload-button mb-3">Upload</button>
                 </div>
             </div>
         </div>
