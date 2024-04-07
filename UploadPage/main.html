@@ -68,42 +68,60 @@
             </div>
             <div class="col-sm-6 col-md-3 order-md-3">
                 <div class="row bg-secondary justify-content-center" style="height: 600px;">
-                Print Settings
-
-                <div class="dropdown" style="margin: 0 auto; width:200px">
-                    <h5>Color option</h5>
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Black & white
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#" onclick="updateButtonText('Black & white',this)">Black & white</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="updateButtonText('Color',this)">Color</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown" style="margin: 0 auto;">
-                    <h5>Pages</h5>
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        All
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#" onclick="updateButtonText('Option 1',this)">Option 1</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="updateButtonText('Option 2',this)">Option 2</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="updateButtonText('Option 3',this)">Option 3</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown" style="margin: 0 auto;">
-                    <h5>Orientation</h5>
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Portrait
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#" onclick="updateButtonText('Portrait',this)">Portrait</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="updateButtonText('Landscape',this)">Landscape</a></li>
-                    </ul>
-                    <div class="print-button-container">
-                        <button onclick="window.print();" class="btn btn-primary">Print</button>
-                        </div>
+                    <h3>Print Settings</h3>
+    
+                    <div class="dropdown" style="margin: 0 auto;">
+                        <h5>Color option</h5>
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
+                            Black & white
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('Black & white',this)">Black & white</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('Color',this)">Color</a></li>
+                        </ul>
                     </div>
+                    <div class="dropdown" style="margin: 0 auto;">
+                        <h5>Pages</h5>
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
+                            All
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('All',this)">All</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('Custom',this)">Custom</a></li>
+                        </ul>
+                        <div>
+                            <input class="custom-page" type="text" placeholder="e.g 1-5, 8, 9-11">
+                        </div>
+    
+                    </div>
+                    <div class="dropdown" style="margin: 0 auto;">
+                        <h5>Copies</h5>
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
+                            1
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('1',this)">1</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('2',this)">2</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('3',this)">3</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('4',this)">4</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('5',this)">5</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('6',this)">6</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('7',this)">7</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('8',this)">8</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="dropdown" style="margin: 0 auto;">
+                        <h5>Orientation</h5>
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px">
+                            Portrait
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('Portrait',this)">Portrait</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateButtonText('Landscape',this)">Landscape</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn">Upload</button>
                 </div>
             </div>
         </div>
@@ -116,7 +134,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
-=======
 
->>>>>>> b7a5fd5e77c9e07c08ecac1094aef950f23daeaa

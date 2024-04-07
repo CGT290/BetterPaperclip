@@ -93,7 +93,17 @@ padding: 20px;
 margin-top: 20px;
 }
 
-.text-center h3, .text-center h5 {
-  margin: 0; /* Reset margin for h3 and h5 */
-  padding: 0; /* Reset padding for h3 and h5 */
+.custom-page{
+  display:none;
+}
+.cust-display{
+  display:block;
+}
+input{
+  color:grey;
+  width:150;
+}
+.upload-button{
+  width:150px; 
+  background-color:#5CA167;
 }
