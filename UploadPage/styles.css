@@ -82,7 +82,7 @@ margin:0;
 }
 #drop-area {
 float:right;
-width: 257px;
+width: 300px;
 height: 200px;
 border: 2px dashed #ccc;
 text-align: center;
@@ -93,8 +93,30 @@ padding: 20px;
 margin-top: 20px;
 }
 
-.text-center h3, .text-center h5 {
-  margin: 0; /* Reset margin for h3 and h5 */
-  padding: 0; /* Reset padding for h3 and h5 */
+.custom-page{
+  display:none;
+  color:grey;
+  width:150px;
+}
+.cust-display{
+  display:block;
+}
+.buttons{
+  background-color: #85C790;
+}
+  
+.upload-button{
+
+  width:150px; 
+  background-color:#5CA167;
+  border-radius: 25px;
 }
 
+.main-container{
+  height:600px;
+  background-color: #D8D8D8;
+}
+.side-container{
+  height:600px;
+  background-color: #D8D8D8;
+}
