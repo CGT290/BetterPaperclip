@@ -72,64 +72,17 @@ cursor:pointer;
 
 body{
 margin:0;
-text-align: center;
 }
 
 .center-container {
+  float:right;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
+  margin-top:50px;
+  max-width:1000px;
 }
 
-table {
-  width: calc(100% - 20px); /* Adjust width to account for left and right margins */
-  margin-left: auto; 
-  margin-right: auto;
-  border-radius: 10px;
-  overflow: hidden;
-  border-collapse: collapse;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-  background-color:#f2f2f2;
-}
-th {
-  background-color:85C790;
-}
-.saved-cards{
-  height:220px;
-  background-color:#85C790;
-  padding:15px;
-  border-radius: 10px;
-}
-.saved-cards button{
-  background-color:#5CA167;
-}
-
-.one-tap-pay-btn{
-  margin-top: 10px; 
-  margin-right: 10px; 
-  margin-bottom: 10px;
-}
-.new-payment{
-  height:220px; 
-  background-color:#85C790;
-  padding:15px;
-  border-radius: 10px;
-}
-.new-payment button{
-  background-color:#5CA167;
-}
-.add-card-btn {
-  margin-top: 10px; 
-  margin-right: 10px; 
-  margin-bottom: 10px;
-}
-
-#FundingInfo{
-  display:none;
-}
-.dropdown-menu{
-  width:30px;
+.text{
+align-items: left;
 }
