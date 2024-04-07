@@ -31,6 +31,17 @@ document.querySelectorAll(".drop-area_input").forEach(inputElement => {
       updateDropArea(files[0], dropArea); 
     }
   });
+  dropArea.addEventListener("click", (e) => {
+
+    inputElement.click();
+});
+inputElement.addEventListener("change", (e) => {
+    const files = e.target.files;
+    if (files.length) {
+        updateDropArea(files[0], dropArea);
+    }
+});
+
 });
 
 function updateDropArea(file, dropArea) {
