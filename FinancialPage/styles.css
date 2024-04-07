@@ -81,8 +81,8 @@ text-align: center;
 }
 
 table {
-  width: calc(100% - 20px); /* Adjust width to account for left and right margins */
-  margin-left: auto; 
+  width: calc(100% - 20px); 
+  margin-left: 30px; 
   margin-right: auto;
   border-radius: 10px;
   overflow: hidden;
@@ -90,13 +90,11 @@ table {
 }
 
 th, td {
+  background-color:#85C790;
   text-align: left;
-  padding: 8px;
-  background-color:#f2f2f2;
+  padding: 5px;
 }
-th {
-  background-color:85C790;
-}
+
 .saved-cards{
   height:220px;
   background-color:#85C790;
