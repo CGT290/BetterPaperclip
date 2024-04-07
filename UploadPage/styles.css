@@ -150,3 +150,21 @@ display: none;
   padding: 20px;
   box-shadow: 0 4px 8px rgb(0, 0, 0,0.1);
 }
+/* faq button */
+#FAQ-button{
+  width:50px;
+  height:50px;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  text-align:center;
+  border-radius:20px;
+  background-color:#85C790;
+  cursor:pointer;
+}
+#FAQ-button div{
+  position:relative;
+  color:white;
+  font-size:30px;
+  top:10px;
+}
