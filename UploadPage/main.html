@@ -59,8 +59,10 @@
             <div class="col-sm-12 col-md-6 order-md-2">
                 
                     <div class="drop-area" style="height: 600px;">
-                            <p>Drag and drop files here</p>
+                        <div><p>Tap or drag and drop files here to upload</p>
                             <input type="file" name="FilesUpload" class = "drop-area_input">
+                        </div>
+                            
                             
                     </div>
                 
@@ -68,21 +70,21 @@
             </div>
 
             <!--queue preview-->
-            <div class="col-sm-6 col-md-3 order-md-1">
-                <div class="side-containder" style="height: 600px;">
+            <div class="col-sm-6 col-md-3 order-md-1 side-containder">
+                <div class="side-container" style="height: 600px;">
                     Second Div Content
                 </div>
             </div>
 
             <!--print options container-->
             <div class="col-sm-6 col-md-3 order-md-3">
-                <div class="bg-secondary p-3" style="height: 600px; border-radius: 6px;">
-                    <h3 style="color: white; margin-bottom: 20px;" id ="printSettingHeading">Printing Setting</h3>
+                <div class="p-3 side-container" style="height: 600px; border-radius: 6px;">
+                    <h3>Printing Setting</h3>
 
                     
                     <div class="mb-3">
-                        <label for="colorOption" style="color: white;">Color option</label>
-                        <select id="colorOption" class="form-control">
+                        <label for="colorOption">Color option</label>
+                        <select id="buttons" class="form-control">
                             <option>Black & white</option>
                             <option>Color</option>
                         </select>
@@ -90,8 +92,8 @@
 
                     
                     <div class="mb-3">
-                        <label for="pages" style="color: white;">Pages</label>
-                        <select id="pages" class="form-control" onchange="customTextBar(this)">
+                        <label for="pages">Pages</label>
+                        <select id="buttons" class="form-control" onchange="customTextBar(this)">
                             <option value="All">All</option>
                             <option value="Custom">Custom</option>
                             
@@ -101,8 +103,8 @@
                     
 
                     <div class="mb-3">
-                        <label for="copies" style="color: white;">Copies</label>
-                        <select id="Copies" class="form-control">
+                        <label for="copies">Copies</label>
+                        <select id="buttons" class="form-control">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -117,8 +119,8 @@
 
                     
                     <div class="mb-3">
-                        <label for="orientation" style="color: white;">Orientation</label>
-                        <select id="orientation" class="form-control">
+                        <label for="orientation">Orientation</label>
+                        <select id="buttons" class="form-control">
                             <option>Portrait</option>
                             <option>Landscape</option>
                         </select>
@@ -126,7 +128,7 @@
 
                     
                     <div>
-                        <button onclick="window.print();" class="btn btn-primary w-100">Print</button>
+                        <button id="upload-button" onclick="window.print();" class="btn btn-primary w-100">Print</button>
                     </div>
                 </div>
             </div>
