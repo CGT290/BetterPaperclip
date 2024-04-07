@@ -106,4 +106,5 @@ input{
 .upload-button{
   width:150px; 
   background-color:#5CA167;
+  border-radius: 25px;
 }
