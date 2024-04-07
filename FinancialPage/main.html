@@ -56,18 +56,21 @@
         <div id = "FundingInfo">
             <div class="row justify-content-center mt-3">
             
-                <div class="col-sm-6 mt-3 ">
+                <div class="col-sm-4 mt-3 ">
                     <h5>Pay by Saved Card</h5>
                     <div class="saved-cards">
                         <h5>Visa ***3012 | exp.02/26</h5>
                         <h6>Add Balance</h6>
                         <input type="number" maxlength="10" value="$">
                         <br>
+                        <br>
+                        <br>
+                        <br>
                         <button class = "one-tap-pay-btn">One Tap Pay</button>
                     </div>
                 </div>
                 
-                <div class="col-sm-6 mt-3 ">
+                <div class="col-sm-4 mt-3 ">
                     <h5>New Payment Method</h5>
                     <div class="new-payment">
                         <h6>Card Number (Credit or Debit)</h6>
@@ -75,15 +78,16 @@
                         <br>
                         <br>
                         <div class="row">
-                            <div class="col-sm-6">
-                                <h6>Expiration Date</h6>
-                                <input type="text" style="width:60%;">
+                            <div class="col-sm-4">
+                                <h6 class="no-wrap">Expiration Date</h6>
+                                <input type="text" style="width:120%;">
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-4 cvv-container">
                                 <h6>CVV/CVN</h6>
-                                <input type="number" name="cvv" min ="0" max = "999" maxlength="3" style="width:50%;">
+                                <input type="number" name="cvv" min ="0" max = "999" maxlength="3" style="width:80%;">
                             </div>
                         </div>
+                        <br>
                         <button class ="add-card-btn">Add Card</button>
                     </div>
                 </div>
@@ -95,9 +99,13 @@
 
         <br>
         <br>
-    <div class="container center-container">        
         <div class="row justify-content-center mt-3">
+        <div class="col-sm-5">
             <h2>Print History</h2>
+            <br>
+            <div class="center-container">
+            <br>
+            <br>
             <table>
                 <thead>
                 <tr>
@@ -150,6 +158,7 @@
             </table>
         </div>
     </div>
+</div>
     <a id="FAQ-button" href="../FAQPage/main.html">
         <div class="fa-solid fa-question"></div>
     </a>
