@@ -92,15 +92,13 @@
                     <div class="mb-3">
                         <label for="pages" style="color: white;">Pages</label>
                         <select id="pages" class="form-control">
-                            <option>Custom</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option onclick="customTextBar(this,'All')">All</option>
+                            <option onclick="customTextBar(this, 'Custom')">Custom</option>
                             
                         </select>
+                        <input class="custom-text-bar" type="text" placeholder="e.g 1-5, 8, 9-11">
                     </div>
+                    
 
                     <div class="mb-3">
                         <label for="copies" style="color: white;">Copies</label>
@@ -110,6 +108,9 @@
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
                             
                         </select>
                     </div>

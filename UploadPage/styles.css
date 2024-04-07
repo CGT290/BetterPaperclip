@@ -86,13 +86,13 @@ margin:0;
 margin-top: 20px;
 }
 
-.custom-page{
+.custom-text-bar{
   display:none;
-  color:grey;
-  width:150px;
 }
 .cust-display{
   display:block;
+  color:grey;
+  width:150px;
 }
 .buttons{
   background-color: #85C790;
@@ -150,4 +150,3 @@ display: none;
   padding: 20px;
   box-shadow: 0 4px 8px rgb(0, 0, 0,0.1);
 }
-
