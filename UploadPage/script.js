@@ -52,6 +52,10 @@ function updateDropArea(file, dropArea) {
     dropArea.innerHTML = `<p>File name: ${file.name}</p>`;
   }
 }
-
+function Upload(element) {
+  var image = element.closest(".side-containder").querySelector("img");
+  var previewContainer = document.querySelector("#queue-preview .preview-container");
+  previewContainer.appendChild(image.cloneNode(true));
+}
 
 
