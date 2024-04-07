@@ -176,3 +176,11 @@ display: none;
   font-size:30px;
   top:10px;
 }
+.preview-container{
+height:150px;
+width:100%;
+background-color:#ccc;
+}
+#queue-preview{
+overflow:scroll;
+}

@@ -17,7 +17,7 @@
                 <!-- Image -->
                 <img src="../images/leafIcon.png" alt="Title Icon" width="40px">
                 <!-- Title text -->
-                <span class="navbar-brand mb-0 h1" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">BetterPaperCut</span>
+                <span class="navbar-brand mb-0 h1 dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">BetterPaperCut</span>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item" href="../MainPage/main.html">Main page</a></li>
                     <li><a class="dropdown-item" href="../FinancialPage/main.html">Financials page</a></li>
@@ -71,8 +71,12 @@
 
             <!--queue preview-->
             <div class="col-sm-6 col-md-3 order-md-1 side-containder">
-                <div class="side-container" style="height: 600px;">
-                    Second Div Content
+                <div class="side-container" id="queue-preview" style="height: 600px;">
+                    <div class="preview-container mb-3"></div>
+                    <div class="preview-container mb-3"></div>
+                    <div class="preview-container mb-3"></div>
+                    <div class="preview-container mb-3"></div>
+                    <div class="preview-container mb-3"></div>
                 </div>
             </div>
 
@@ -128,7 +132,7 @@
 
                     
                     <div>
-                        <button id="upload-button" onclick="window.print();" class="btn btn-primary w-100">Upload to Queue</button>
+                        <button id="upload-button" onclick="Upload(this);" class="btn btn-primary w-100">Upload</button>
                     </div>
                 </div>
             </div>
@@ -144,4 +148,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
