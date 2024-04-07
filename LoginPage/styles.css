@@ -1,3 +1,29 @@
+.navbar-brand {
+  width: 33.333%;
+}
+
+.custom-navbar {
+  background-color: #85C790;
+  z-index: 1;
+}
+
+.pageTitle{
+cursor:pointer;
+float:left;
+width:260px;
+
+}
+header h1{
+font-size:23px;
+margin-left:30px;
+margin-right:5px;
+width:170px;
+}
+
+.titleCard:hover{
+cursor:pointer;
+}
+
 body {
     background-image:url(../images/login_background_image.webp);
     background-size: cover;

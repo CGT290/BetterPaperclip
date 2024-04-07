@@ -85,3 +85,8 @@ padding: 20px;
 #file-list {
 margin-top: 20px;
 }
+
+.text-center h3, .text-center h5 {
+  margin: 0; /* Reset margin for h3 and h5 */
+  padding: 0; /* Reset padding for h3 and h5 */
+}
