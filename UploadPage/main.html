@@ -25,13 +25,13 @@
             </div>
 
 
-            <!-- balance bar-->
+            
             <div class="balanceBar ">
                 <p>Balance: $XX.XX</p>
             </div>
             
             <div class="dropdown">
-                <!--profile button-->
+                
                 <div class="headerButton" id="dropdownProfileButton" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="fas fa-user"></div>
                 </div>
@@ -40,7 +40,7 @@
                 </ul>
             </div>
             <div class="dropdown">
-                <!--settings button-->
+               
                 <div class="headerButton" id="dropdownSettingsButton" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="fas fa-cog"></div>
                 </div>
@@ -55,7 +55,7 @@
     
     <div class="container mt-3">
         <div class="row">
-            <!--main preview container-->
+            
             <div class="col-sm-12 col-md-6 order-md-2">
                 
                     <div class="drop-area" style="height: 600px;">
@@ -80,7 +80,7 @@
                 </div>
             </div>
 
-            <!--print options container-->
+            
             <div class="col-sm-6 col-md-3 order-md-3">
                 <div class="p-3 side-container" style="height: 600px; border-radius: 6px;">
                     <h3>Printing Setting</h3>
@@ -96,31 +96,30 @@
 
                     
                     <div class="mb-3">
-                        <label for="pages">Pages</label>
-                        <select id="buttons" class="form-control" onchange="customTextBar(this)">
-                            <option value="All">All</option>
-                            <option value="Custom">Custom</option>
-                            
-                        </select>
-                        <input class="custom-text-bar" type="text" placeholder="e.g 1-5, 8, 9-11">
-                    </div>
-                    
-
-                    <div class="mb-3">
-                        <label for="copies">Copies</label>
-                        <select id="buttons" class="form-control">
+                        <label for="pages" style="color: white;">Pages</label>
+                        <select id="pages" class="form-control">
+                            <option>Custom</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
+                            
+                        </select>
+                        <input class="custom-text-bar" type="text" placeholder="e.g 1-5, 8, 9-11">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="copies" style="color: white;">Copies</label>
+                        <select id="Copies" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
                             
                         </select>
                     </div>
-
                     
                     <div class="mb-3">
                         <label for="orientation">Orientation</label>

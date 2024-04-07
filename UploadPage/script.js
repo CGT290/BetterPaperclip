@@ -7,6 +7,7 @@ function customTextBar(selectElement) {
     }
 }
 
+
 document.querySelectorAll(".drop-area_input").forEach(inputElement => {
   const dropArea = inputElement.closest(".drop-area");
 
@@ -49,12 +50,11 @@ function updateDropArea(file, dropArea) {
    
     const reader = new FileReader();
     reader.onload = (e) => {
+      dropArea.innerHTML = '';
       const img = new Image();
       img.src = e.target.result;
-      img.style.width = '100%';
-      img.style.height = 'auto'; 
-      img.style.objectFit = 'contain';
-      dropArea.innerHTML = ''; 
+      
+       
       dropArea.appendChild(img); 
     };
     reader.readAsDataURL(file);
