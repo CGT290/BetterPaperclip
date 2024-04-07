@@ -1,12 +1,15 @@
-function updateButtonText(option, element) {
-  element.closest('.dropdown').querySelector('.dropdown-toggle').innerText = option;
-  if(option=='Custom'){
-      element.closest('.dropdown').querySelector('.custom-page').classList.toggle("cust-display");
-  }
-  else{
-      element.closest('.dropdown').querySelector('.custom-page').classList.remove("cust-display");
-  }
+function checkForCustomOption(selectElement) {
+    const customInputDiv = document.querySelector('.custom-input');
+    const customNumberInput = document.getElementById('customNumber');
+
+    if (selectElement.value === 'Custom') {
+        customInputDiv.style.display = '';
+        customNumberInput.setAttribute('data-type', selectElement.id); // Use data attribute to store whether it's for pages or copies
+    } else {
+        customInputDiv.style.display = 'none';
+    }
 }
+
 
 document.querySelectorAll(".drop-area_input").forEach(inputElement => {
   const dropArea = inputElement.closest(".drop-area");
@@ -39,12 +42,11 @@ function updateDropArea(file, dropArea) {
    
     const reader = new FileReader();
     reader.onload = (e) => {
+      dropArea.innerHTML = '';
       const img = new Image();
       img.src = e.target.result;
-      img.style.width = '100%';
-      img.style.height = 'auto'; 
-      img.style.objectFit = 'contain';
-      dropArea.innerHTML = ''; 
+      
+       
       dropArea.appendChild(img); 
     };
     reader.readAsDataURL(file);

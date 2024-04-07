@@ -25,13 +25,13 @@
             </div>
 
 
-            <!-- balance bar-->
+            
             <div class="balanceBar ">
                 <p>Balance: $XX.XX</p>
             </div>
             
             <div class="dropdown">
-                <!--profile button-->
+                
                 <div class="headerButton" id="dropdownProfileButton" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="fas fa-user"></div>
                 </div>
@@ -40,7 +40,7 @@
                 </ul>
             </div>
             <div class="dropdown">
-                <!--settings button-->
+               
                 <div class="headerButton" id="dropdownSettingsButton" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="fas fa-cog"></div>
                 </div>
@@ -55,7 +55,7 @@
     
     <div class="container mt-3">
         <div class="row">
-            <!--main preview container-->
+            
             <div class="col-sm-12 col-md-6 order-md-2">
                 
                     <div class="drop-area" style="height: 600px;">
@@ -67,14 +67,14 @@
                 
             </div>
 
-            <!--queue preview-->
+            
             <div class="col-sm-6 col-md-3 order-md-1">
                 <div class="side-containder" style="height: 600px;">
                     Second Div Content
                 </div>
             </div>
 
-            <!--print options container-->
+            
             <div class="col-sm-6 col-md-3 order-md-3">
                 <div class="bg-secondary p-3" style="height: 600px; border-radius: 6px;">
                     <h3 style="color: white; margin-bottom: 20px;" id ="printSettingHeading">Printing Setting</h3>
@@ -91,29 +91,27 @@
                     
                     <div class="mb-3">
                         <label for="pages" style="color: white;">Pages</label>
-                        <select id="pages" class="form-control">
+                        <select id="pages" class="form-control" onchange="checkForCustomOption(this)">
+                            <option>All</option>
                             <option>Custom</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            
                         </select>
                     </div>
 
+                    <div class="mb-3 custom-input" style="display: none;">
+                        <label for="customNumber" style="color: white;">Enter Number of Pages</label>
+                        <input type="number" id="customNumber" class="form-control">
+                    </div>
+                    
                     <div class="mb-3">
                         <label for="copies" style="color: white;">Copies</label>
-                        <select id="Copies" class="form-control">
+                        <select id="copies" class="form-control" onchange="checkForCustomOption(this)">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
-                            
                         </select>
                     </div>
-
                     
                     <div class="mb-3">
                         <label for="orientation" style="color: white;">Orientation</label>
