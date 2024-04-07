@@ -13,18 +13,18 @@ document.querySelectorAll(".drop-area_input").forEach(inputElement => {
 
   dropArea.addEventListener("dragover", (e) => {
     e.preventDefault();
-    // Add visual feedback
+    
     dropArea.classList.add('active');
   });
 
   dropArea.addEventListener("dragleave", (e) => {
-    // Remove visual feedback
+    
     dropArea.classList.remove('active');
   });
 
   dropArea.addEventListener("drop", (e) => {
     e.preventDefault();
-    // Remove visual feedback
+    
     dropArea.classList.remove('active');
 
     const files = e.dataTransfer.files;
@@ -36,7 +36,7 @@ document.querySelectorAll(".drop-area_input").forEach(inputElement => {
 
 function updateDropArea(file, dropArea) {
   if (file.type.startsWith('image/')) {
-    // It's an image file, let's read and display it
+   
     const reader = new FileReader();
     reader.onload = (e) => {
       const img = new Image();
@@ -49,20 +49,10 @@ function updateDropArea(file, dropArea) {
     };
     reader.readAsDataURL(file);
   } else {
-    const fileInfo = document.createElement('div');
-    fileInfo.innerHTML = `
-      <div style="text-align: center;">
-        <i class="fas fa-file" style="font-size: 48px;"></i> <!-- Font Awesome file icon -->
-        <p style="word-break: break-all;">${file.name}</p> <!-- File name -->
-      </div>
-    `;
-    fileInfo.style.display = 'flex';
-    fileInfo.style.flexDirection = 'column';
-    fileInfo.style.justifyContent = 'center';
-    fileInfo.style.alignItems = 'center';
-    fileInfo.style.height = '100%';
-    dropArea.appendChild(fileInfo); // Add the file info
+   
+    dropArea.innerHTML = `<p>File name: ${file.name}</p>`;
   }
 }
+
 
 
