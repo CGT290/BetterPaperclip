@@ -83,10 +83,10 @@ th, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-    background-color:#f2f2f2;
+    background-color:#85C790;
 }
 th {
-    background-color: #dddddd;
+    background-color: #85C790;
 }
 /* faq button */
 #FAQ-button{
@@ -97,7 +97,7 @@ th {
   right:20px;
   text-align:center;
   border-radius:20px;
-  background-color:#85C790;
+  background-color:#5CA167;
   cursor:pointer;
 }
 #FAQ-button div{
