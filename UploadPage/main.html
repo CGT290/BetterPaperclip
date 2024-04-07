@@ -91,9 +91,9 @@
                     
                     <div class="mb-3">
                         <label for="pages" style="color: white;">Pages</label>
-                        <select id="pages" class="form-control">
-                            <option onclick="customTextBar(this,'All')">All</option>
-                            <option onclick="customTextBar(this, 'Custom')">Custom</option>
+                        <select id="pages" class="form-control" onchange="customTextBar(this)">
+                            <option value="All">All</option>
+                            <option value="Custom">Custom</option>
                             
                         </select>
                         <input class="custom-text-bar" type="text" placeholder="e.g 1-5, 8, 9-11">

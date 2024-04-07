@@ -1,10 +1,10 @@
-function customTextBar(element, option) {
-  if(option=='Custom'){
-    element.closest('.mb-3').querySelector('.custom-text-bar').classList.toggle("cust-display");
-  }
-  else{
-    element.closest('.mb-3').querySelector('.custom-text-bar').classList.toggle("custom-text-bar");
-  }
+function customTextBar(selectElement) {
+  var customInput = selectElement.closest('.mb-3').querySelector('.custom-text-bar');
+    if (selectElement.value === 'Custom') {
+        customInput.classList.add("cust-display");
+    } else {
+        customInput.classList.remove("cust-display");
+    }
 }
 
 document.querySelectorAll(".drop-area_input").forEach(inputElement => {
