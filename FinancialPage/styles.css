@@ -68,14 +68,23 @@ cursor:pointer;
 
 body{
 margin:0;
+text-align: center;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
 }
 
 table {
-  width: 100%;
+  width: calc(100% - 20px); /* Adjust width to account for left and right margins */
+  margin-left: auto; 
+  margin-right: auto;
   border-radius: 10px;
   overflow: hidden;
   border-collapse: collapse;
 }
+
 th, td {
   text-align: left;
   padding: 8px;
@@ -87,16 +96,29 @@ th {
 .saved-cards{
   height:200px; 
   background-color:#85C790;
+  padding:10px;
 }
 .saved-cards button{
   background-color:#5CA167;
 }
+
+.one-tap-pay-btn{
+  margin-top: 10px; 
+  margin-right: 10px; 
+  margin-bottom: 10px;
+}
 .new-payment{
   height:200px; 
   background-color:#85C790;
+  padding:10px;
 }
 .new-payment button{
   background-color:#5CA167;
+}
+.add-card-btn {
+  margin-top: 10px; 
+  margin-right: 10px; 
+  margin-bottom: 10px;
 }
 
 #FundingInfo{
