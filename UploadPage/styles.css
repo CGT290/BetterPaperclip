@@ -86,41 +86,52 @@ margin:0;
 margin-top: 20px;
 }
 
-.custom-page{
+.custom-text-bar{
   display:none;
-  color:grey;
-  width:150px;
 }
 .cust-display{
   display:block;
+  color:grey;
+  width:150px;
 }
-.buttons{
+#buttons{
   background-color: #85C790;
 }
   
-.upload-button{
+#upload-button{
 
   width:150px; 
   background-color:#5CA167;
   border-radius: 25px;
 }
 
-.drop-area {
-  height: 600px;
-  background-color: #554d4d;
+.drop-area{
+  height:600px;
   position: relative;
-  border: 2px dashed #ccc;
-  text-align: center;
+  float:center;
+  width:100%;
   padding: 20px;
   justify-content: center;
   display: flex;
   align-items: center;
   max-width: 100%;
-  font-size: 30px;
-  font-weight: bold;
+  font-size:30px;
+  font-weight:bold;
   cursor: pointer;
   overflow: hidden;
+  background-color: #f2f2f2;
+  border-radius: 10px;
 }
+.drop-area div{
+  display:flex;
+  border: 8px dashed #ccc;
+  text-align: center;
+  height:60%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .drop-area img {
   width: 100%;
@@ -147,9 +158,33 @@ display: none;
 }
 
 .side-container{
-  background-color: #530000;
+  background-color: #f2f2f2;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0,0.1);
 }
-
+/* faq button */
+#FAQ-button{
+  width:50px;
+  height:50px;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  text-align:center;
+  border-radius:20px;
+  background-color:#5CA167;
+  cursor:pointer;
+}
+#FAQ-button div{
+  position:relative;
+  color:white;
+  font-size:30px;
+  top:10px;
+}
+.preview-container{
+height:150px;
+width:100%;
+background-color:#ccc;
+}
+#queue-preview{
+overflow:scroll;
+}

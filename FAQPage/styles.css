@@ -1,6 +1,7 @@
 .navbar-brand {
   width: 33.333%;
 }
+
 .profile-icon,
 .settings-icon {
   width: 16.666%;
@@ -9,7 +10,7 @@
 .custom-navbar {
   background-color: #85C790;
 }
-                        /*header*/
+
 header{
 background-color: #5CA167;
 justify-content: space-between;
@@ -67,22 +68,15 @@ cursor:pointer;
 }
 .titleCard:hover{
 cursor:pointer;
+text-decoration:none;
 }
 
 
-body{
-margin:0;
+
+ .center-container {
+  margin-top: 50px; 
+  margin-left:30px;
+  max-width: 1100px; 
+  text-align: justify;
 }
 
-.center-container {
-  float:right;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  margin-top:50px;
-  max-width:1000px;
-}
-
-.text{
-align-items: left;
-}

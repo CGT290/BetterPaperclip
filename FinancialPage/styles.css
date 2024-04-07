@@ -77,48 +77,61 @@ text-align: center;
 
 .center-container {
   display: flex;
-  justify-content: center;
+  background-color:#85C790;
+  border-radius:20px;
+  text-align:center;
+  min-width: 500px;
 }
 
+
 table {
-  width: calc(100% - 20px); 
-  margin-left: 30px; 
-  margin-right: auto;
+  width: 100%;
+  margin-top: 20px;
   border-radius: 10px;
   overflow: hidden;
   border-collapse: collapse;
 }
 
 th, td {
-  background-color:#85C790;
-  text-align: left;
   padding: 5px;
 }
 
-.saved-cards{
-  height:220px;
+.saved-card-container{
+  height:240px;
+  min-width:350px;
   background-color:#85C790;
   padding:15px;
   border-radius: 10px;
-}
-.saved-cards button{
-  background-color:#5CA167;
 }
 
 .one-tap-pay-btn{
   margin-top: 10px; 
   margin-right: 10px; 
   margin-bottom: 10px;
+  text-align: right;
+  background-color:#5CA167;
 }
 .new-payment{
-  height:220px; 
+  height:240px; 
   background-color:#85C790;
   padding:15px;
   border-radius: 10px;
+  min-width:350px;
 }
 .new-payment button{
   background-color:#5CA167;
+  text-align: right;
 }
+
+
+.no-wrap {
+  white-space: nowrap; 
+}
+
+.cvv-container {
+  padding-left:10px;
+}
+
 .add-card-btn {
   margin-top: 10px; 
   margin-right: 10px; 
@@ -130,6 +143,24 @@ th, td {
 }
 .dropdown-menu{
   width:30px;
+}
+
+#FAQ-button{
+  width:50px;
+  height:50px;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  text-align:center;
+  border-radius:20px;
+  background-color:#5CA167;
+  cursor:pointer;
+}
+#FAQ-button div{
+  position:relative;
+  color:white;
+  font-size:30px;
+  top:10px;
 }
 
 input::-webkit-outer-spin-button,

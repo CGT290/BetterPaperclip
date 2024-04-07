@@ -1,12 +1,9 @@
-function checkForCustomOption(selectElement) {
-    const customInputDiv = document.querySelector('.custom-input');
-    const customNumberInput = document.getElementById('customNumber');
-
+function customTextBar(selectElement) {
+  var customInput = selectElement.closest('.mb-3').querySelector('.custom-text-bar');
     if (selectElement.value === 'Custom') {
-        customInputDiv.style.display = '';
-        customNumberInput.setAttribute('data-type', selectElement.id); // Use data attribute to store whether it's for pages or copies
+        customInput.classList.add("cust-display");
     } else {
-        customInputDiv.style.display = 'none';
+        customInput.classList.remove("cust-display");
     }
 }
 
@@ -35,6 +32,17 @@ document.querySelectorAll(".drop-area_input").forEach(inputElement => {
       updateDropArea(files[0], dropArea); 
     }
   });
+  dropArea.addEventListener("click", (e) => {
+
+    inputElement.click();
+});
+inputElement.addEventListener("change", (e) => {
+    const files = e.target.files;
+    if (files.length) {
+        updateDropArea(files[0], dropArea);
+    }
+});
+
 });
 
 function updateDropArea(file, dropArea) {
@@ -55,6 +63,10 @@ function updateDropArea(file, dropArea) {
     dropArea.innerHTML = `<p>File name: ${file.name}</p>`;
   }
 }
-
+function Upload(element) {
+  var image = element.closest(".side-containder").querySelector("img");
+  var previewContainer = document.querySelector("#queue-preview .preview-container");
+  previewContainer.appendChild(image.cloneNode(true));
+}
 
 

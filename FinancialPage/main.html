@@ -16,7 +16,7 @@
                 <!-- Image -->
                 <img src="../images/leafIcon.png" alt="Title Icon" width="40px">
                 <!-- Title text -->
-                <span class="navbar-brand mb-0 h1" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">BetterPaperCut</span>
+                <span class="navbar-brand mb-0 h1 dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">BetterPaperCut</span>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item" href="../MainPage/main.html">Main page</a></li>
                     <li><a class="dropdown-item" href="../UploadPage/main.html">Upload page</a></li>
@@ -55,36 +55,51 @@
         <button id = "addFundsBtn"> Add Funds </button>
         <div id = "FundingInfo">
             <div class="row justify-content-center mt-3">
-            
-                <div class="col-sm-6 mt-3 ">
+                <div class="col-sm-4 mt-3">
                     <h5>Pay by Saved Card</h5>
-                    <div class="saved-cards">
-                        <h5>Visa ***3012 | exp.02/26</h5>
-                        <h6>Add Balance</h6>
-                        <input type="number" maxlength="10" value="$">
-                        <br>
-                        <button class = "one-tap-pay-btn">One Tap Pay</button>
+                    <div class="saved-card-container">
+                        <div class="saved-cards" id="savedCard">
+                            <h5>Card Information</h5>
+                            <p><strong>Card Number:</strong> <span id="cardNumber"></span></p>
+                            <p><strong>Expiration Date:</strong> <span id="expirationDate"></span></p>
+                        </div>
+                        
+                        <script type="text/javascript">
+                            var cardNumber = "**** **** **** 1234";
+                            var expirationDate = "02/26";
+                            document.getElementById("cardNumber").textContent = cardNumber;
+                            document.getElementById("expirationDate").textContent = expirationDate;
+                            document.getElementById("cvv").textContent = cvv;
+                        </script>
+                        <div>
+                            Add Balance
+                            <input type="number" maxlength="10" value="$">
+                            <br>
+                            <br>
+                            <button class = "one-tap-pay-btn">One Tap Pay</button>
+                    </div>
                     </div>
                 </div>
                 
-                <div class="col-sm-6 mt-3 ">
+                <div class="col-sm-4 mt-3">
                     <h5>New Payment Method</h5>
                     <div class="new-payment">
                         <h6>Card Number (Credit or Debit)</h6>
-                        <input type="number" name ="cc" min="0" max ="9999999999999999" maxlength="16" style="width:240px;">
+                        <input type="number" id="cardNumber" placeholder="Enter card number" maxlength="16" style="width:100%;">
                         <br>
                         <br>
                         <div class="row">
-                            <div class="col-sm-6">
-                                <h6>Expiration Date</h6>
-                                <input type="text" style="width:60%;">
+                            <div class="col-sm-4">
+                                <h6 class="no-wrap">Expiration Date</h6>
+                                <input type="text" id="expirationDate" style="width:100%" maxlength="5">
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-4 cvv-container">
                                 <h6>CVV/CVN</h6>
-                                <input type="number" name="cvv" min ="0" max = "999" maxlength="3" style="width:50%;">
+                                <input type="number" name="cvv" id="cvv" min ="0" max = "999" maxlength="3" style="width:100%;">
                             </div>
                         </div>
-                        <button class ="add-card-btn">Add Card</button>
+                        <br>
+                        <button class ="add-card-btn" id="addCardBtn">Add Card</button>
                     </div>
                 </div>
             </div>
@@ -95,9 +110,14 @@
 
         <br>
         <br>
-    <div class="container center-container">        
+        <div class="container mt-3">
         <div class="row justify-content-center mt-3">
+        <div class="sm-6">
             <h2>Print History</h2>
+            <br>
+            <div class="center-container">
+            <br>
+            <br>
             <table>
                 <thead>
                 <tr>
@@ -150,6 +170,11 @@
             </table>
         </div>
     </div>
+</div>
+</div>
+    <a id="FAQ-button" href="../FAQPage/main.html">
+        <div class="fa-solid fa-question"></div>
+    </a>
 
 </body>
 

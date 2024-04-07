@@ -2,5 +2,5 @@ wireframes: https://balsamiq.cloud/sw7qkv4/p7sopwe/r3EFD
 
 prototype: https://www.figma.com/proto/H7ESRvYkuYaquJBQHkhH0z/BetterPaperclip-Prototype?type=design&node-id=96-171&t=Q9Uihyc5kFao517l-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=129%3A2&mode=design
 
-website: https://johnathansanchez16.github.io/BetterPaperclip/MainPage/main.html
+website: https://johnathansanchez16.github.io/BetterPaperclip/LoginPage/main.html
 123

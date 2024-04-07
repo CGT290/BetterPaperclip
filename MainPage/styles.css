@@ -83,8 +83,26 @@ th, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-    background-color:#f2f2f2;
+    background-color:#85C790;
 }
 th {
-    background-color: #dddddd;
+    background-color: #85C790;
+}
+/* faq button */
+#FAQ-button{
+  width:50px;
+  height:50px;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  text-align:center;
+  border-radius:20px;
+  background-color:#5CA167;
+  cursor:pointer;
+}
+#FAQ-button div{
+  position:relative;
+  color:white;
+  font-size:30px;
+  top:10px;
 }
