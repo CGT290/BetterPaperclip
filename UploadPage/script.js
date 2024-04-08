@@ -49,28 +49,42 @@ inputElement.addEventListener("change", (e) => {
 
 });
 
-function updateDropArea(file, dropArea) {
-if (file.type.startsWith('image/')) {
+function undo(dropArea, inputElement) {
+ 
+  dropArea.innerHTML = `<div><p>Tap or drag and drop files here to upload</p></div>`;
+  
 
-  const reader = new FileReader();
-  reader.onload = (e) => {
-    const img = new Image();
-    img.src = e.target.result;
-    img.style.width = '100%';
-    img.style.height = 'auto';
-    img.style.objectFit = 'contain';
-    dropArea.innerHTML = '';
-    dropArea.appendChild(img);
-  };
-  reader.readAsDataURL(file);
-} else {
+  inputElement.value = '';
+}
 
-  dropArea.innerHTML = `<p>File name: ${file.name}</p>`;
+function updateDropArea(file, dropArea, inputElement) {
+  if (file.type.startsWith('image/')) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const img = new Image();
+      img.src = e.target.result;
+      img.style.width = '100%';
+      img.style.height = 'auto';
+      img.style.objectFit = 'contain';
+
+      
+      dropArea.innerHTML = '';
+      dropArea.appendChild(img);
+
+      
+      img.addEventListener('click', () => {
+        undo(dropArea, inputElement);
+      });
+    };
+    reader.readAsDataURL(file);
+  } else {
+    
+    dropArea.innerHTML = `<p>File name: ${file.name}</p>`;
+    dropArea.querySelector('p').style.cursor = 'pointer'; 
+    dropArea.querySelector('p').addEventListener('click', () => {
+      undo(dropArea, inputElement);
+    });
+  }
 }
-}
-function Upload(element) {
-var image = element.closest(".side-containder").querySelector("img");
-var previewContainer = document.querySelector("#queue-preview .preview-container");
-previewContainer.appendChild(image.cloneNode(true));
-}
+
 
