@@ -20,7 +20,7 @@ document.querySelectorAll('input[type="number"]').forEach(input =>{
 document.getElementById("addCardBtn").addEventListener("click", function() {
     var cardNumber = document.getElementById("cardNumber").value.trim();
     var expirationDate = document.getElementById("ed").value;
-    var cvv = document.getElementById("cvv").value.trim();
+    var cvv = document.getElementById("cvn").value.trim();
     
     var cardNumberRegex = /^[0-9]{16}$/;
     var cvvRegex = /^\d{3}$/;
@@ -64,8 +64,9 @@ document.getElementById("addCardBtn").addEventListener("click", function() {
 
     document.getElementById("savedCard").innerHTML = newCardContent;
 
+    console.log("Clearing input fields...");
     document.getElementById("cardNumber").value = "";
-    document.getElementById("expirationDate").value = "";
-    document.getElementById("cvv").value = "";
+    document.getElementById("ed").value = "";
+    document.getElementById("cvn").value = "";
 });
 
