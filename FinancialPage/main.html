@@ -60,20 +60,17 @@
                     <div class="saved-card-container">
                         <div class="saved-cards" id="savedCard">
                             <h5>Card Information</h5>
-                            <p><strong>Card Number:</strong> <span id="cardNumber"></span></p>
+                            <p><strong>Card Number:</strong> <span id="maskedCardNumber"></span></p>
                             <p><strong>Expiration Date:</strong> <span id="expirationDate"></span></p>
                         </div>
                         
                         <script type="text/javascript">
-                            var cardNumber = "**** **** **** 1234";
-                            var expirationDate = "02/26";
-                            document.getElementById("cardNumber").textContent = cardNumber;
+                            document.getElementById("maskCardNumber").textContent = maskedCardNumber;
                             document.getElementById("expirationDate").textContent = expirationDate;
-                            document.getElementById("cvv").textContent = cvv;
                         </script>
                         <div>
                             Add Balance
-                            <input type="number" maxlength="10" value="$">
+                            <input type="number" maxlength="10">
                             <br>
                             <br>
                             <button class = "one-tap-pay-btn">One Tap Pay</button>
@@ -85,17 +82,17 @@
                     <h5>New Payment Method</h5>
                     <div class="new-payment">
                         <h6>Card Number (Credit or Debit)</h6>
-                        <input type="number" id="cardNumber" placeholder="Enter card number" maxlength="16" style="width:100%;">
+                        <input type="text" id="cardNumber" placeholder="Enter card number" maxlength="16" style="width:100%;">
                         <br>
                         <br>
                         <div class="row">
                             <div class="col-sm-4">
                                 <h6 class="no-wrap">Expiration Date</h6>
-                                <input type="text" id="expirationDate" style="width:100%" maxlength="5">
+                                <input type="text" id="ed" placeholder="MM/YY" style="width:100%" maxlength="5">
                             </div>
                             <div class="col-sm-4 cvv-container">
                                 <h6>CVV/CVN</h6>
-                                <input type="number" name="cvv" id="cvv" min ="0" max = "999" maxlength="3" style="width:100%;">
+                                <input type="number" id="cvv" placeholder="cvv" min ="0" max = "999" maxlength="3" style="width:100%;">
                             </div>
                         </div>
                         <br>
