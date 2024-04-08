@@ -1,10 +1,16 @@
 function customTextBar(selectElement) {
-  var customInput = selectElement.closest('.mb-3').querySelector('.custom-text-bar');
-    if (selectElement.value === 'Custom') {
-        customInput.classList.add("cust-display");
-    } else {
-        customInput.classList.remove("cust-display");
-    }
+  if (selectElement.value === 'Custom') {
+      selectElement.closest('.mb-3').querySelector('.custom-text-bar').classList.add("cust-display");
+  }
+  if(selectElement.value === 'All'){
+      selectElement.closest('.mb-3').querySelector('.custom-text-bar').classList.remove("cust-display");
+  }
+  if(selectElement.value === 'Landscape'){
+  document.querySelector(".drop-area").setAttribute("style", "height: 200px; top:150px;");
+  }
+  if(selectElement.value === 'Portrait'){
+  document.querySelector(".drop-area").setAttribute("style", "height: 600px;");
+  }
 }
 
 
