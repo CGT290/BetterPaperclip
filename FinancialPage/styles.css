@@ -170,8 +170,7 @@ input::-webkit-inner-spin-button {
 }
 
 #addFundsBtn{
-  background-color: blue;
-  color: white;
+  background-color: #5CA167;
   border: 2px solid slategrey;
   border-radius: 20px;
   padding: 10px 20px;
