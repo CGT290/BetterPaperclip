@@ -177,3 +177,7 @@ input::-webkit-inner-spin-button {
   padding: 10px 20px;
   font-weight: bold;
 }
+
+#AddBalanceText {
+  font-weight: bold;
+}
