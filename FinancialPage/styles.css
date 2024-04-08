@@ -80,7 +80,7 @@ text-align: center;
   background-color:#85C790;
   border-radius:20px;
   text-align:center;
-  min-width: 500px;
+  min-width: 400px;
 }
 
 
@@ -97,7 +97,7 @@ th, td {
 }
 
 .saved-card-container{
-  height:240px;
+  height:300px;
   min-width:350px;
   background-color:#85C790;
   padding:15px;
@@ -112,7 +112,7 @@ th, td {
   background-color:#5CA167;
 }
 .new-payment{
-  height:240px; 
+  height:300px; 
   background-color:#85C790;
   padding:15px;
   border-radius: 10px;
